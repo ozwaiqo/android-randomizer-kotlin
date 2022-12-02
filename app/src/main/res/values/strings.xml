@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Randomizer</string>
+    <string name="zero">0</string>
+
+    <string name="edt_txt_min">min</string>
+    <string name="edt_txt_max">max</string>
+
+    <string name="checkbox_inclusive">Inclusive</string>
+
+    <string name="btn_count">count</string>
+</resources>

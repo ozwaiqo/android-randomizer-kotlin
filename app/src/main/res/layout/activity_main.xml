@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ozwaiqo.randomizer.MainActivity">
+
+    <TextView
+        android:id="@+id/txt_result_number"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/zero"
+        android:textColor="@color/black"
+
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.3" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_from_to"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.6">
+
+
+        <EditText
+            android:id="@+id/edt_txt_min"
+
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:maxLines="1"
+
+            android:hint="@string/edt_txt_min"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/edt_txt_max"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent"/>
+
+
+        <EditText
+            android:id="@+id/edt_txt_max"
+
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:maxLines="1"
+
+            android:hint="@string/edt_txt_max"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:autofillHints="phone"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edt_txt_min"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/checkbox_inclusive"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:buttonTint="@color/black"
+        android:checked="true"
+        android:text="@string/checkbox_inclusive"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintVertical_bias="0.70" />
+
+
+    <Button
+        android:id="@+id/btn_count"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:backgroundTint="@color/black"
+        android:text="@string/btn_count"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.86" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
